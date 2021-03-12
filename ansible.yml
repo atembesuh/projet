@@ -1,0 +1,14 @@
+---
+- hosts: 
+  tasks:
+  - name: install apache and elinks
+    apt:
+      name:
+      - apache
+      - elinks
+      state: latest
+  tasks: update
+  - name: apt-get update
+    apt-get:
+          name:
+          - update
